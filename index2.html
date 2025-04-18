@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player Box Generator</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <h1>Enter Number of Players</h1>
+
+      <!-- Input section -->
+      <div class="input-group">
+        <input
+          type="number"
+          id="playerCount"
+          placeholder="Enter number of players"
+          min="1"
+        />
+        <button onclick="generateBoxes()">Generate Boxes</button>
+      </div>
+
+      <!-- Game Area (hidden initially) -->
+      <div id="gameArea" style="display: none">
+        <!-- Scrollable content wrapper -->
+        <div class="scroll-wrapper" id="scrollWrapper">
+          <div class="container">
+            <div class="column" id="col1"></div>
+            <div class="column" id="col2"></div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button onclick="showRandomBoxes()">Show Random Boxes</button>
+        </div>
+
+        <div class="result" id="resultArea"></div>
+      </div>
+    </div>
+
+    <script src="script2.js"></script>
+  </body>
+</html>
